@@ -55,3 +55,10 @@ document
     const subtitleText = parseSrtContent(srtContent);
     document.getElementById('secondBox').value = subtitleText;
   });
+
+document
+  .getElementById('darkModeToggle')
+  .addEventListener('click', function () {
+    const bodyElement = document.querySelector('body');
+    bodyElement.classList.toggle('dark-mode');
+  });
