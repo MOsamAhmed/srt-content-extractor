@@ -37,6 +37,10 @@ document
     const file = event.target.files[0];
     if (!file) return;
 
+    // Display the filename
+    const fileNameElement = document.getElementById('filenameDisplay');
+    fileNameElement.textContent = file.name;
+
     const reader = new FileReader();
     reader.onload = function (e) {
       document.getElementById('srtDisplay').value = e.target.result;
