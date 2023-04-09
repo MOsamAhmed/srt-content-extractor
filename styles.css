@@ -9,6 +9,12 @@ body {
 h1 {
   padding: 20px;
   color: #333;
+  background-color: #fff; /* Add a white background */
+  border: 1px solid #ccc; /* Add a light gray border */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  display: inline-block; /* Make the h1 inline to have the same width as the content */
+  margin-bottom: 20px; /* Add some margin below the h1 */
 }
 
 #instructions {
@@ -82,6 +88,14 @@ button:active {
 }
 
 /* Dark mode styles */
+#darkModeToggle {
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+  margin: 20px auto;
+  display: block;
+}
+
 .dark-mode {
   background-color: #333;
   color: #f0f0f0;
